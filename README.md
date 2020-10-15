@@ -47,6 +47,8 @@ None
 
 2. Open the SVG files in any web browser to view them.
 
+3. Open the SVG files in a text editor to edit.
+
 ---------------------------------------------------------------------------
 
 Enjoy!
