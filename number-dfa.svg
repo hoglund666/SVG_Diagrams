@@ -1,0 +1,107 @@
+<?xml version="1.0" standalone="no" ?>
+<svg width="800px" height="1000px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<title>Number DFA</title>
+
+<!-- N_START -->
+<circle cx="150" cy="200" r="50" stroke="black" stroke-width="2" fill="#ddddff" />
+<text text-anchor="middle" x="150" y="205" font-family="Helvetica" font-weight="bold" font-size="18px">START</text>
+
+<!-- State transition from N_START to N_MINUS -->
+<line x1="150" y1="250" x2="150" y2="350" stroke="black" stroke-width="4" />
+<text x="155" y="300" font-family="Helvetica" font-weight="bold" font-size="18px">-</text>
+<line x1="150" y1="350" x2="138" y2="338" stroke="black" stroke-width="4" />
+<line x1="150" y1="350" x2="162" y2="338" stroke="black" stroke-width="4" />
+
+<!-- N_MINUS -->
+<circle cx="150" cy="400" r="50" stroke="black" stroke-width="2" fill="#ddddff" />
+<text text-anchor="middle" x="150" y="405" font-family="Helvetica" font-weight="bold" font-size="18px">N_MINUS</text>
+
+<!-- State transition from N_MINUS to N_BEFORE -->
+<line x1="150" y1="450" x2="150" y2="550" stroke="black" stroke-width="4" />
+<text x="155" y="500" font-family="Helvetica" font-weight="bold" font-size="18px">#</text>
+<line x1="150" y1="550" x2="138" y2="538" stroke="black" stroke-width="4" />
+<line x1="150" y1="550" x2="162" y2="538" stroke="black" stroke-width="4" />
+
+<!-- N_TRAP1 -->
+<circle cx="400" cy="200" r="50" stroke="black" stroke-width="2" fill="#ddddff" />
+<text text-anchor="middle" x="400" y="205" font-family="Helvetica" font-weight="bold" font-size="18px">TRAP</text>
+
+<!-- State transition from N_MINUS to N_TRAP1 -->
+<line x1="189" y1="369" x2="361" y2="232" stroke="black" stroke-width="4" />
+<text x="265" y="300" font-family="Helvetica" font-weight="bold" font-size="18px">*</text>
+<line x1="361" y1="232" x2="360" y2="246" stroke="black" stroke-width="4" />
+<line x1="361" y1="232" x2="347" y2="231" stroke="black" stroke-width="4" />
+
+<!-- State transition from N_START to N_TRAP1 -->
+<line x1="200" y1="200" x2="350" y2="200" stroke="black" stroke-width="4" />
+<text text-anchor="middle" x="275" y="190" font-family="Helvetica" font-weight="bold" font-size="18px">*</text>
+<line x1="350" y1="200" x2="340" y2="190" stroke="black" stroke-width="4" />
+<line x1="350" y1="200" x2="340" y2="210" stroke="black" stroke-width="4" />
+
+<!-- State transition from N_START to N_BEFORE -->
+<path d="M 105 222 a 1000 500, 0, 0 0, 0 355" stroke="black" stroke-width="4" fill="none" />
+<text x="20" y="400" font-family="Helvetica" font-weight="bold" font-size="18px">#</text>
+<line x1="105" y1="577" x2="91" y2="574" stroke="black" stroke-width="4" />
+<line x1="105" y1="577" x2="107" y2="562" stroke="black" stroke-width="4" />
+
+<!-- N_BEFORE -->
+<circle cx="150" cy="600" r="50" stroke="black" stroke-width="2" fill="#ddddff" />
+<circle cx="150" cy="600" r="45" stroke="black" stroke-width="2" fill="#ddddff" />
+<text text-anchor="middle" x="150" y="605" font-family="Helvetica" font-weight="bold" font-size="15px">N_BEFORE</text>
+
+<!-- State transition from N_BEFORE to N_BEFORE -->
+<path d="M 120 640 a 40 50, 0, 1 0, 60 0" stroke="black" stroke-width="4" fill="none" />
+<text text-anchor="middle" x="150" y="750" font-family="Helvetica" font-weight="bold" font-size="18px">#</text>
+<line x1="180" y1="640" x2="194" y2="644" stroke="black" stroke-width="4" />
+<line x1="180" y1="640" x2="176" y2="654" stroke="black" stroke-width="4" />
+
+<!-- State transition from N_BEFORE to N_POINT -->
+<line x1="200" y1="600" x2="350" y2="600" stroke="black" stroke-width="4" />
+<text text-anchor="middle" x="275" y="590" font-family="Helvetica" font-weight="bold" font-size="18px">.</text>
+<line x1="350" y1="600" x2="340" y2="590" stroke="black" stroke-width="4" />
+<line x1="350" y1="600" x2="340" y2="610" stroke="black" stroke-width="4" />
+
+<!-- N_POINT -->
+<circle cx="400" cy="600" r="50" stroke="black" stroke-width="2" fill="#ddddff" />
+<text text-anchor="middle" x="400" y="605" font-family="Helvetica" font-weight="bold" font-size="18px">N_POINT</text>
+
+<!-- State transition from N_POINT to N_AFTER -->
+<line x1="450" y1="600" x2="600" y2="600" stroke="black" stroke-width="4" />
+<text text-anchor="middle" x="525" y="590" font-family="Helvetica" font-weight="bold" font-size="18px">#</text>
+<line x1="600" y1="600" x2="590" y2="590" stroke="black" stroke-width="4" />
+<line x1="600" y1="600" x2="590" y2="610" stroke="black" stroke-width="4" />
+
+<!-- N_AFTER -->
+<circle cx="650" cy="600" r="50" stroke="black" stroke-width="2" fill="#ddddff" />
+<circle cx="650" cy="600" r="45" stroke="black" stroke-width="2" fill="#ddddff" />
+<text text-anchor="middle" x="650" y="605" font-family="Helvetica" font-weight="bold" font-size="18px">N_AFTER</text>
+
+<!-- State transition from N_AFTER to N_AFTER -->
+<path d="M 620 640 a 40 50, 0, 1 0, 60 0" stroke="black" stroke-width="4" fill="none" />
+<text text-anchor="middle" x="650" y="750" font-family="Helvetica" font-weight="bold" font-size="18px">#</text>
+<line x1="680" y1="640" x2="694" y2="644" stroke="black" stroke-width="4" />
+<line x1="680" y1="640" x2="676" y2="654" stroke="black" stroke-width="4" />
+
+<!-- N_TRAP2 -->
+<circle cx="400" cy="800" r="50" stroke="black" stroke-width="2" fill="#ddddff" />
+<text text-anchor="middle" x="400" y="805" font-family="Helvetica" font-weight="bold" font-size="18px">TRAP</text>
+
+<!-- State transition from N_BEFORE to N_TRAP2 -->
+<line x1="189" y1="632" x2="361" y2="769" stroke="black" stroke-width="4" />
+<text x="285" y="690" font-family="Helvetica" font-weight="bold" font-size="18px">*</text>
+<line x1="361" y1="769" x2="360" y2="755" stroke="black" stroke-width="4" />
+<line x1="361" y1="769" x2="347" y2="770" stroke="black" stroke-width="4" />
+
+<!-- State transition from N_AFTER to N_TRAP2 -->
+<line x1="611" y1="632" x2="439" y2="769" stroke="black" stroke-width="4" />
+<text x="515" y="690" font-family="Helvetica" font-weight="bold" font-size="18px">*</text>
+<line x1="439" y1="769" x2="440" y2="755" stroke="black" stroke-width="4" />
+<line x1="439" y1="769" x2="453" y2="770" stroke="black" stroke-width="4" />
+
+<!-- State transition from N_POINT to N_TRAP2 -->
+<line x1="400" y1="650" x2="400" y2="750" stroke="black" stroke-width="4" />
+<text x="405" y="690" font-family="Helvetica" font-weight="bold" font-size="18px">*</text>
+<line x1="400" y1="750" x2="388" y2="738" stroke="black" stroke-width="4" />
+<line x1="400" y1="750" x2="412" y2="738" stroke="black" stroke-width="4" />
+
+</svg>

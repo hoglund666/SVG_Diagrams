@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no" ?>
+<svg width="2000px" height="2000px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<title>Arrowhead calculations</title>
+
+<!-- Sample state -->
+<circle cx="750" cy="1000" r="250" stroke="black" stroke-width="10" fill="#ddddff" />
+
+<!-- Sample state transition -->
+<line x1="-305" y1="160" x2="555" y2="845" stroke="black" stroke-width="20" />
+<line x1="555" y1="845" x2="550" y2="775" stroke="black" stroke-width="20" />
+<line x1="555" y1="845" x2="485" y2="850" stroke="black" stroke-width="20" />
+
+<!-- Red triangle -->
+<line x1="555" y1="845" x2="160" y2="845" stroke="red" stroke-width="4" />
+<line x1="555" y1="845" x2="160" y2="888" stroke="red" stroke-width="4" />
+<line x1="160" y1="845" x2="160" y2="888" stroke="red" stroke-width="4" />
+<path d="M 280 845 a 275 275, 0, 0 0, 3 30" stroke="red" stroke-width="4" fill="none" />
+
+<!-- Magenta triangle -->
+<line x1="555" y1="845" x2="355" y2="845" stroke="magenta" stroke-width="4" />
+<line x1="555" y1="845" x2="355" y2="685" stroke="magenta" stroke-width="4" />
+<line x1="355" y1="845" x2="355" y2="685" stroke="magenta" stroke-width="4" />
+<path d="M 450 845 a 105 105, 0, 0 1, 24 -66" stroke="magenta" stroke-width="4" fill="none" />
+
+<!-- Green triangle -->
+<line x1="555" y1="845" x2="500" y2="845" stroke="#00dd00" stroke-width="4" />
+<line x1="555" y1="845" x2="500" y2="350" stroke="#00dd00" stroke-width="4" />
+<line x1="500" y1="845" x2="500" y2="350" stroke="#00dd00" stroke-width="4" />
+<path d="M 530 845 a 25 25, 0, 0 1, 22 -25" stroke="#00dd00" stroke-width="4" fill="none" />
+
+<!-- Labels -->
+<text x="600" y="600" font-family="Helvetica" fill="magenta" font-weight="bold" font-size="18px">&#952;</text>
+<text x="600" y="640" font-family="Helvetica" fill="#00dd00" font-weight="bold" font-size="18px">&#952; + &#960;/4</text>
+<text x="600" y="680" font-family="Helvetica" fill="red" font-weight="bold" font-size="18px">&#952; - &#960;/4</text>
+
+</svg>

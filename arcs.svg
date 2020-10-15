@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no" ?>
+<svg width="800px" height="400px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<title>Elliptical arcs</title>
+
+<!-- Legend for labels -->
+<text text-anchor="middle" x="400" y="50" font-family="Helvetica" font-weight="bold" font-size="18px">Legend: (large arc flag, sweep/mirror flag)</text>
+
+<!-- The arcs themselves -->
+<path d="M 400 150 a 200 100, 0, 0 0, 0 100" stroke="red" stroke-width="4" fill="none" />
+<path d="M 400 150 a 200 100, 0, 0 1, 0 100" stroke="blue" stroke-width="4" fill="none" />
+<path d="M 400 150 a 200 100, 0, 1 0, 0 100" stroke="green" stroke-width="4" fill="none" />
+<path d="M 400 150 a 200 100, 0, 1 1, 0 100" stroke="magenta" stroke-width="4" fill="none" />
+
+<!-- Color-coded labels -->
+<text text-anchor="middle" x="160" y="350" font-family="Helvetica" fill="green" font-weight="bold" font-size="18px">(1,0)</text>
+<text text-anchor="middle" x="320" y="350" font-family="Helvetica" fill="red" font-weight="bold" font-size="18px">(0,0)</text>
+<text text-anchor="middle" x="480" y="350" font-family="Helvetica" fill="blue" font-weight="bold" font-size="18px">(0,1)</text>
+<text text-anchor="middle" x="640" y="350" font-family="Helvetica" fill="magenta" font-weight="bold" font-size="18px">(1,1)</text>
+
+</svg>
